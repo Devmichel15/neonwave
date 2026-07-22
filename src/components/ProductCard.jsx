@@ -18,7 +18,7 @@ export default function ProductCard({ index, name, sub, price, dark, delay, chil
           <div className="card__name">{name}</div>
           <div className="card__sub">{sub}</div>
         </div>
-        <div className="card__price">{price}</div>
+        {price && <div className="card__price">{price}</div>}
       </div>
     </article>
   );

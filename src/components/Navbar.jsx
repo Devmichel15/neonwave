@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import './Navbar.css';
+import { useEffect, useRef } from "react";
+import "./Navbar.css";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -9,24 +9,26 @@ export default function Navbar() {
     if (!nav) return;
 
     const onScroll = () => {
-      nav.classList.toggle('solid', window.scrollY > 40);
+      nav.classList.toggle("solid", window.scrollY > 40);
     };
 
-    document.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
-    return () => document.removeEventListener('scroll', onScroll);
+    return () => document.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header className="nav" ref={navRef}>
       <div className="container nav__row">
-        <a href="#top" className="nav__logo">NeonWave</a>
+        <a href="#top" className="nav__logo">
+          NeonWave
+        </a>
         <nav className="nav__links">
           <a href="#drop">Coleção</a>
           <a href="#lookbook">Editorial</a>
           <a href="#manifesto">Sobre</a>
-          <a href="#access">Arquivo</a>
+          <a href="#archive">Arquivo</a>
         </nav>
         <div className="nav__actions">
           <button aria-label="Pesquisar">

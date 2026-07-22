@@ -2,10 +2,10 @@ import { useEffect, useRef } from 'react';
 import './Marquee.css';
 
 const items = [
-  'Edição Limitada',
+  'Streetwear Angolano',
   'Luanda, Angola',
-  'Drop 002',
-  'Menos é Mais',
+  'NeonWave',
+  'Feito por Jovens',
 ];
 
 const DotSvg = () => (

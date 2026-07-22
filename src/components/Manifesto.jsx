@@ -8,12 +8,13 @@ export default function Manifesto() {
           Manifesto
         </div>
         <p className="manifesto__statement reveal">
-          Não perseguimos <span>hype.</span><br />
-          Construímos peças que <span>ficam.</span>
+          Não é só <span>roupa.</span><br />
+          É identidade <span>angolana.</span>
         </p>
         <p className="manifesto__note reveal">
-          Cada coleção nasce de um princípio simples — menos ruído, mais forma.
-          Tecido técnico, corte preciso, cor contida. O resto é decoração.
+          A NeonWave nasce da cultura jovem de Luanda. Acreditamos que o streetwear
+          vai além da moda — é uma forma de expressar quem somos, de onde viemos e
+          onde queremos estar. Criada por Pedro Jala, uma peça de cada vez.
         </p>
       </div>
     </section>
