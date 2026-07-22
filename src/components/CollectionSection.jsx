@@ -5,19 +5,82 @@ const products = [
   {
     index: "01",
     name: "T-Shirt NeonWave",
-    sub: "Branco · Algodão Premium",
-    dark: false,
+    sub: "Vista frontal",
+    media: "/take2.jpeg",
+    size: "large",
     delay: null,
-    svg: (
-      <svg
-        className="plate__silhouette"
-        viewBox="0 0 400 500"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <path d="M130,80 L270,80 L280,180 L255,470 L215,470 L205,220 L195,220 L185,470 L145,470 L120,180 Z" />
-        <line x1="130" y1="130" x2="270" y2="130" />
-      </svg>
-    ),
+  },
+  {
+    index: "02",
+    name: "T-Shirt NeonWave",
+    sub: "Detalhe do logo",
+    media: "/take3.jpeg",
+    size: "large",
+    delay: "80ms",
+  },
+  {
+    index: "03",
+    name: "T-Shirt NeonWave",
+    sub: "Ângulo lateral",
+    media: "/take10.jpeg",
+    size: "medium",
+    delay: null,
+  },
+  {
+    index: "04",
+    name: "T-Shirt NeonWave",
+    sub: "Costas",
+    media: "/take11.jpeg",
+    size: "medium",
+    delay: "80ms",
+  },
+  {
+    index: "05",
+    name: "T-Shirt NeonWave",
+    sub: "Close-up",
+    media: "/take12.jpeg",
+    size: "medium",
+    delay: "160ms",
+  },
+  {
+    index: "06",
+    name: "T-Shirt NeonWave",
+    sub: "Em uso",
+    media: "/take13.jpeg",
+    size: "large",
+    delay: null,
+  },
+  {
+    index: "07",
+    name: "T-Shirt NeonWave",
+    sub: "Detalle tek",
+    media: "/take14.jpeg",
+    size: "large",
+    delay: "80ms",
+  },
+  {
+    index: "08",
+    name: "T-Shirt NeonWave",
+    sub: "Perspectiva",
+    media: "/take15.jpeg",
+    size: "medium",
+    delay: null,
+  },
+  {
+    index: "09",
+    name: "T-Shirt NeonWave",
+    sub: "Ambiente",
+    media: "/take16.jpeg",
+    size: "medium",
+    delay: "80ms",
+  },
+  {
+    index: "10",
+    name: "T-Shirt NeonWave",
+    sub: "Look completo",
+    media: "/take17.jpeg",
+    size: "medium",
+    delay: "160ms",
   },
 ];
 
@@ -37,15 +100,11 @@ export default function CollectionSection() {
         <div className="drop-grid">
           {products.map((product) => (
             <ProductCard key={product.index} {...product}>
-              {product.media ? (
-                <img
-                  className="plate__image"
-                  src={product.media}
-                  alt={product.name}
-                />
-              ) : (
-                product.svg
-              )}
+              <img
+                className="plate__image"
+                src={product.media}
+                alt={product.name}
+              />
             </ProductCard>
           ))}
         </div>

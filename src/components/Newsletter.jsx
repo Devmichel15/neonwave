@@ -13,9 +13,9 @@ export default function Newsletter() {
     <section className="access" id="access">
       <div className="container access__grid">
         <div className="access__copy reveal">
-          <h2>Acesso Antecipado</h2>
+          <h2>Faz Parte</h2>
           <p>
-            Seja o primeiro a saber quando a próxima peça for lançada. Sem spam. Só o essencial.
+            Entra na onda. Recebe em primeira mão as novidades, os drops e tudo o que a NeonWave tem preparado. Sem spam, só o que interessa.
           </p>
         </div>
         <form

@@ -62,14 +62,11 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--s-4);
 }
-.drop-grid .card {
+.drop-grid .card--large {
+  grid-column: span 6;
+}
+.drop-grid .card--medium {
   grid-column: span 4;
-}
-.drop-grid .card:first-child {
-  grid-column: span 6;
-}
-.drop-grid .card:last-child {
-  grid-column: span 6;
 }
 
 .card {
@@ -113,9 +110,8 @@
 }
 
 @media (max-width: 980px) {
-  .drop-grid .card,
-  .drop-grid .card:first-child,
-  .drop-grid .card:last-child {
+  .drop-grid .card--large,
+  .drop-grid .card--medium {
     grid-column: 1 / span 12;
   }
 }

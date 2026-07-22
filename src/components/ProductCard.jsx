@@ -1,9 +1,9 @@
 import './ProductCard.css';
 
-export default function ProductCard({ index, name, sub, price, dark, delay, children }) {
+export default function ProductCard({ index, name, sub, price, dark, delay, size, children }) {
   return (
     <article
-      className={`card reveal${delay ? ' reveal-line' : ''}`}
+      className={`card${size ? ` card--${size}` : ''} reveal${delay ? ' reveal-line' : ''}`}
       style={delay ? { '--d': delay } : undefined}
     >
       <div className="card__frame">

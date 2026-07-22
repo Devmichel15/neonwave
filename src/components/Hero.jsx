@@ -54,11 +54,7 @@ export default function Hero() {
           className="hero__visual reveal"
           aria-label="Editorial NeonWave em Luanda"
         >
-          <img
-            className="hero__image"
-            src="/take1.jpeg"
-            alt="Editorial NeonWave em Luanda"
-          />
+         
         </div>
 
         <div className="hero__wave-wrap">

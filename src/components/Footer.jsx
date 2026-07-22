@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <div className="nav__logo">NeonWave</div>
-            <p>Streetwear premium nascido em Luanda, Angola. Peças em edição limitada, sem ruído.</p>
+            <p>Streetwear angolano nascido em Luanda. Criada por Pedro Jala, uma marca feita por jovens, para jovens.</p>
           </div>
 
           {columns.map((col) => (

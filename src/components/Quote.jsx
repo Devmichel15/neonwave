@@ -5,10 +5,10 @@ export default function Quote() {
     <section className="quote">
       <div className="container">
         <p className="quote__mark reveal">
-          "Vestimos quem entende que atitude não precisa de barulho."
+          "Nascemos em Luanda para mostrar que atitude não precisa de barulho."
         </p>
         <div className="quote__attr reveal reveal-line" style={{ '--d': '120ms' }}>
-          — NeonWave, Drop 002
+          — Pedro Jala, Fundador da NeonWave
         </div>
       </div>
     </section>
