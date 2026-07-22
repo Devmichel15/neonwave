@@ -1,0 +1,24 @@
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--paper);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: width var(--t-fast) var(--ease-soft), height var(--t-fast) var(--ease-soft);
+}
+.cursor-dot.grow {
+  width: 44px;
+  height: 44px;
+}
+
+@media (pointer: coarse) {
+  .cursor-dot {
+    display: none;
+  }
+}

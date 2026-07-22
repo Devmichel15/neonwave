@@ -1,0 +1,53 @@
+.access { padding: var(--s-8) 0; }
+.access__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--s-3);
+  align-items: center;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: var(--s-6) 0;
+}
+.access__copy { grid-column: 1 / span 6; }
+.access__copy h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.6vw, 44px);
+  text-transform: uppercase;
+  margin-bottom: var(--s-2);
+}
+.access__copy p { font-size: 14px; color: var(--graphite); max-width: 40ch; }
+.access__form {
+  grid-column: 8 / span 5;
+  display: flex;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: var(--s-2);
+  gap: var(--s-3);
+}
+.access__form input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.access__form input::placeholder { color: var(--line); }
+.access__form button {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap var(--t-fast) var(--ease-soft);
+}
+.access__form button:hover { gap: 14px; }
+.access__form svg { width: 14px; height: 14px; }
+
+@media (max-width: 980px) {
+  .access__copy,
+  .access__form { grid-column: 1 / span 12; }
+  .access__form { margin-top: var(--s-4); }
+}

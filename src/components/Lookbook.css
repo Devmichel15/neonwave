@@ -1,0 +1,33 @@
+.lookbook {
+  background: var(--ink);
+  color: var(--paper);
+}
+.lookbook .section-head h2,
+.lookbook .eyebrow { color: var(--paper); }
+.lookbook .eyebrow::before { background: var(--paper); }
+.lookbook .section-head p { color: var(--silver-3); }
+
+.lookbook__strip {
+  display: flex;
+  gap: var(--s-3);
+  overflow-x: auto;
+  padding: 0 var(--edge) var(--s-3);
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.lookbook__strip::-webkit-scrollbar { display: none; }
+.lookbook__frame {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: min(72vw, 460px);
+}
+.lookbook__frame .plate { aspect-ratio: 3 / 4; }
+.lookbook__cap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--s-2);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--silver-3);
+}

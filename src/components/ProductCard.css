@@ -1,0 +1,93 @@
+.plate {
+  position: relative;
+  background: linear-gradient(155deg, #efefef 0%, #dcdcdc 45%, #cfcfcf 100%);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.plate.dark {
+  background: linear-gradient(155deg, #1c1c1c 0%, #050505 55%, #000 100%);
+}
+.plate__silhouette {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.plate__silhouette path,
+.plate__silhouette line {
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 1;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.plate.dark .plate__silhouette path,
+.plate.dark .plate__silhouette line {
+  stroke: rgba(255, 255, 255, 0.42);
+}
+.plate__tag {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+}
+.plate.dark .plate__tag { color: rgba(255, 255, 255, 0.6); }
+.plate__index {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.plate.dark .plate__index { color: rgba(255, 255, 255, 0.55); }
+
+.drop-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--s-4);
+}
+.drop-grid .card { grid-column: span 4; }
+.drop-grid .card:first-child { grid-column: span 6; }
+.drop-grid .card:last-child { grid-column: span 6; }
+
+.card { display: flex; flex-direction: column; gap: var(--s-3); }
+.card__frame { overflow: hidden; }
+.card__frame .plate { transition: transform var(--t-slow) var(--ease); }
+.card:hover .plate { transform: scale(1.035); }
+.card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--s-3);
+}
+.card__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.card__sub {
+  font-size: 12px;
+  color: var(--stone);
+  letter-spacing: 0.02em;
+}
+.card__price {
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .drop-grid .card,
+  .drop-grid .card:first-child,
+  .drop-grid .card:last-child {
+    grid-column: 1 / span 12;
+  }
+}

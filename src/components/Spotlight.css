@@ -1,0 +1,62 @@
+.spotlight__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--s-5);
+  align-items: center;
+}
+.spotlight__visual { grid-column: 1 / span 6; }
+.spotlight__visual .plate { aspect-ratio: 4 / 5; }
+.spotlight__info { grid-column: 8 / span 5; }
+.spotlight__info .eyebrow { margin-bottom: var(--s-3); }
+.spotlight__info h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.6vw, 44px);
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: var(--s-3);
+}
+.spotlight__price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--s-4);
+  font-variant-numeric: tabular-nums;
+}
+.spotlight__desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--graphite);
+  margin-bottom: var(--s-5);
+  max-width: 42ch;
+}
+
+.plaque {
+  border-top: 1px solid var(--fog);
+}
+.plaque__row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s-2) 0;
+  border-bottom: 1px solid var(--fog);
+  font-size: 12px;
+}
+.plaque__row span:first-child {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+.plaque__row span:last-child { font-weight: 500; }
+.spotlight__cta {
+  display: flex;
+  gap: var(--s-2);
+  margin-top: var(--s-5);
+}
+
+@media (max-width: 980px) {
+  .spotlight__grid { gap: var(--s-4); }
+  .spotlight__visual { grid-column: 1 / span 12; }
+  .spotlight__info {
+    grid-column: 1 / span 12;
+    margin-top: var(--s-5);
+  }
+}
