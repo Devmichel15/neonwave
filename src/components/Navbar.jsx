@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
+import { useCart } from "../hooks/useCart.js";
 import "./Navbar.css";
 
 export default function Navbar() {
   const navRef = useRef(null);
+  const { count, toggleCart } = useCart();
 
   useEffect(() => {
     const nav = navRef.current;
@@ -37,12 +39,12 @@ export default function Navbar() {
               <line x1="21" y1="21" x2="16.6" y2="16.6" />
             </svg>
           </button>
-          <button className="nav__bag" aria-label="Carrinho">
+          <button className="nav__bag" aria-label="Carrinho" onClick={toggleCart}>
             <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.4">
               <path d="M6 8h12l-1 12H7L6 8z" />
               <path d="M9 8V6a3 3 0 0 1 6 0v2" />
             </svg>
-            <span>0</span>
+            <span>{count}</span>
           </button>
         </div>
       </div>

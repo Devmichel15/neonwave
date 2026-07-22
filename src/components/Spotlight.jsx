@@ -1,6 +1,9 @@
+import { useCart } from "../hooks/useCart.js";
 import "./Spotlight.css";
 
 export default function Spotlight() {
+  const { addItem } = useCart();
+
   return (
     <section className="section-pad" id="spotlight">
       <div className="container spotlight__grid">
@@ -53,9 +56,12 @@ export default function Spotlight() {
           </div>
 
           <div className="spotlight__cta">
-            <a href="#access" className="btn btn-primary">
-              Quero Saber Mais
-            </a>
+            <button className="btn btn-primary" onClick={() => addItem()}>
+              Adicionar ao Carrinho
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
             <a href="#manifesto" className="btn btn-ghost">
               Nosso Manifesto
             </a>
