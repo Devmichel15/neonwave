@@ -24,7 +24,7 @@ export default function Navbar() {
     <header className="nav" ref={navRef}>
       <div className="container nav__row">
         <a href="#top" className="nav__logo">
-          NeonWave
+          <img src="/logo.png" alt="NeonWave" className="nav__logo-img" />
         </a>
         <nav className="nav__links">
           <a href="#drop">Coleção</a>

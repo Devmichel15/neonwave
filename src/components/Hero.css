@@ -22,7 +22,7 @@
   grid-column: 1 / span 8;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(52px, 8.6vw, 148px);
+  font-size: clamp(36px, 6vw, 100px);
   line-height: 0.94;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -34,6 +34,15 @@
 .hero__side {
   grid-column: 9 / span 4;
   padding-bottom: 14px;
+}
+.hero__slogan {
+  grid-column: 1 / span 8;
+  font-size: clamp(14px, 1.6vw, 18px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-top: var(--s-3);
+  font-weight: 500;
 }
 .hero__desc {
   font-size: 15px;
@@ -117,6 +126,9 @@
     grid-column: 1 / span 12;
     margin-top: var(--s-4);
     padding-bottom: 0;
+  }
+  .hero__slogan {
+    grid-column: 1 / span 12;
   }
   .hero__scroll {
     display: none;

@@ -41,7 +41,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <div className="nav__logo">NeonWave</div>
+            <img src="/logo.png" alt="NeonWave" className="footer__logo-img" />
             <p>Streetwear angolano nascido em Luanda. Criada por Pedro Jala, uma marca feita por jovens, para jovens.</p>
           </div>
 
@@ -63,6 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__word">
+          <img src="/icon-logo.png" alt="NeonWave" className="footer__word-icon" />
           <h3>NeonWave</h3>
           <div className="footer__legal">© 2026 NeonWave. Luanda, Angola.</div>
         </div>

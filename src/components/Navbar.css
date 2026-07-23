@@ -28,6 +28,13 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   justify-self: start;
+  display: flex;
+  align-items: center;
+}
+.nav__logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
 }
 .nav__links {
   display: flex;

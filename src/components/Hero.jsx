@@ -19,8 +19,8 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__title reveal">
-          Silêncio
-          <br />é <em>posição.</em>
+          Não seguimos
+          <br />padrões, <em>criamos tendências.</em>
         </h1>
 
         <div

@@ -8,7 +8,13 @@ footer {
   padding-bottom: var(--s-7);
 }
 .footer__brand { grid-column: 1 / span 4; }
-.footer__brand .nav__logo { margin-bottom: var(--s-3); }
+.footer__logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--s-3);
+  display: block;
+}
 .footer__brand p {
   font-size: 13px;
   color: var(--stone);
@@ -48,6 +54,12 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   gap: var(--s-3);
+}
+.footer__word-icon {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.15;
 }
 .footer__word h3 {
   font-family: var(--font-display);

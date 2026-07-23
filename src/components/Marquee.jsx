@@ -2,10 +2,10 @@ import { useEffect, useRef } from 'react';
 import './Marquee.css';
 
 const items = [
+  'Não seguimos padrões, criamos tendências.',
   'Streetwear Angolano',
   'Luanda, Angola',
   'NeonWave',
-  'Feito por Jovens',
 ];
 
 const DotSvg = () => (
